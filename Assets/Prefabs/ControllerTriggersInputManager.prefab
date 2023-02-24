@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2932081051208456197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2932081051208456219}
+  - component: {fileID: 2932081051208456196}
+  - component: {fileID: 868335226}
+  m_Layer: 0
+  m_Name: ControllerTriggersInputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2932081051208456219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932081051208456197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2932081051208456196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932081051208456197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ActionAssets:
+  - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &868335226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932081051208456197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d141d05c7fc51594dbe1c72cab00c3cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftTriggerBtn:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Trigger Btn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: f718c148-fbfe-4109-9edb-1d8292f3a63b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightTriggerBtn:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Trigger Btn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 37ca7c7f-3cfc-416d-81c4-2f0eb9aea0b0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  btnA:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Btn A
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 7a73ac5a-5617-40eb-a03c-4987b2ff3d8f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7331454504651468109, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  myLanguageBool: {fileID: 11400000, guid: 30155d67fea8ec946bf305ccb2b36280, type: 2}
+  SpeedoMeters: []
+  transitionCanvas: {fileID: 0}

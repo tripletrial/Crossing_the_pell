@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 2a06e718321866b41a6d75410cafd592
+ModelImporter:
+  serializedVersion: 21100
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 206_aged_siding_wood
+    second: {fileID: 2100000, guid: 0347bbf01f5f5344081e443357462599, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Custom
+    second: {fileID: 2100000, guid: b49cb371edfc8f14f9ace890166649c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRASS
+    second: {fileID: 2100000, guid: 2a1c631d8190dfd4eae9773b4e0aba1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Island_Dock
+    second: {fileID: 2100000, guid: bb84e5dcf4012fb4f9fcd4ab766510e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_19
+    second: {fileID: 2100000, guid: e42d20d3e75f2d14dae620351433290c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal (1)
+    second: {fileID: 2100000, guid: 6e0ac35038d17724a988988ba0d376bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nets
+    second: {fileID: 2100000, guid: 7c3e25e0f14670144b8006d90a9f1947, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nets [imported]
+    second: {fileID: 2100000, guid: c2a5e5c069f49f64dac638e18fa7d502, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Newport_fishnet
+    second: {fileID: 2100000, guid: 19489fa754f469447b2d50d92430c7f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint (13)
+    second: {fileID: 2100000, guid: 0fee139ddfd8db74da45db6351872cf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint (14)
+    second: {fileID: 2100000, guid: 73345bfd4a1f7d4418da3a86bfefce56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint16
+    second: {fileID: 2100000, guid: a8696643cbdbdea4d980fb6166d2451b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint20
+    second: {fileID: 2100000, guid: 0cd5d62c128304e4e806025b863a2a28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Path
+    second: {fileID: 2100000, guid: e8f3885cc0872d548a8bdab6933cbc58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_footings
+    second: {fileID: 2100000, guid: 196c853621276e64e9ec4976e48985ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_grey
+    second: {fileID: 2100000, guid: 89c833ba542af154aaa82034071d4d4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: island_vege (1)
+    second: {fileID: 2100000, guid: 0cbc0d324b8b6b6469a309c85da6cb1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: low dense net
+    second: {fileID: 2100000, guid: e20fd0df95d2d1b418431d5778fcd47c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: low dense net [imported]
+    second: {fileID: 2100000, guid: f02ece2e4dffff34f9407039073fe470, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 03_DIFFUSE
+    second: {fileID: 2800000, guid: abb8d91e06644d64689aa2eb26bb84f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 03_NORMAL
+    second: {fileID: 2800000, guid: 04b99e059e8920b4ab98161383f72e38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 206_aged siding wood texture-seamless
+    second: {fileID: 2800000, guid: 060b2eb004cf306409c360e97da60704, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass bright_250_DB
+    second: {fileID: 2800000, guid: 5d0c2f215b4b65148b7c4170f734a516, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass_C_Diff
+    second: {fileID: 2800000, guid: 74f4ae368de45d241ab8f25b0d9119b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pavers_Normal
+    second: {fileID: 2800000, guid: fa940dc271963e543ab66418245dea06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pavers_grass_opacity
+    second: {fileID: 2800000, guid: f38fd4b6198b78546b8a2d4bce005591, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SheetMetal003_4K_Normal
+    second: {fileID: 2800000, guid: 9ab7881e44ce69c41b48daa3c7a235b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Various_Netting_1K_albedo
+    second: {fileID: 2800000, guid: bd10d0196c7cbe246818e72264b927dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Various_Netting_1K_alpha
+    second: {fileID: 2800000, guid: 755b3546dc80f3d42bed8233b927f652, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Various_Netting_1K_normal
+    second: {fileID: 2800000, guid: 5df433281fa01b94b9e35e631034f23a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tulle_01_small_4K_Normal
+    second: {fileID: 2800000, guid: 79b2ac6d4c1698c43abfb2c763120a4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_grey
+    second: {fileID: 2800000, guid: c3a1244687ebd7c4cb664f417eedb2b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: net_texture
+    second: {fileID: 2800000, guid: 5ebb6f06f6740a74195428ba1c10613d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sheet metal
+    second: {fileID: 2800000, guid: 2bdb0618e282f904086091c0cc48f290, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_natural_horizontal
+    second: {fileID: 2800000, guid: 35853a0ca52402a4d92c3869428d9813, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

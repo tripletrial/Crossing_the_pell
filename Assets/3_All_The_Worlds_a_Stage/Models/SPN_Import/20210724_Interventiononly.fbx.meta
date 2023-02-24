@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: 224317eb5611f8c41a69feb32bf675ba
+ModelImporter:
+  serializedVersion: 21100
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 0010_Snow
+    second: {fileID: 2100000, guid: 351e45c8a07f32a49b1ff4d0f1aaff16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Art graphic
+    second: {fileID: 2100000, guid: 4f336724ac1e1ef44ac8fc21fe54ce59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRIDGE Paint Bus-stop light
+    second: {fileID: 2100000, guid: 9b72be1c080bb4f46912c8b57d388f16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRIDGE Paint Bus-stop light x sign
+    second: {fileID: 2100000, guid: bd35899fc9dd67044846f697c640ea69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRIDGE Paint [imported]
+    second: {fileID: 2100000, guid: f8b6ec1d938cb884d8a7a123eb661163, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corten Screen
+    second: {fileID: 2100000, guid: a9709898de1e5904cbca6626d30fa1f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator Grid
+    second: {fileID: 2100000, guid: e4ed8faf83d097f46a9ecad850c5f82f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Galvanized steel MG style
+    second: {fileID: 2100000, guid: 02237f7134e1c664b845cc0ec8d5595d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_12
+    second: {fileID: 2100000, guid: 622394ebe78b8b24e9584560e4269b30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - Central Tower
+    second: {fileID: 2100000, guid: 2b1b51894e26b8c4087965c33150de29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Central Tower .75
+    second: {fileID: 2100000, guid: ac39ce955ee195847a39e75677932b5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Newport .25
+    second: {fileID: 2100000, guid: 16c8b013d7707f14dbd85976772f5786, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Newport .5
+    second: {fileID: 2100000, guid: 724e333892faab44587d3791d0fefcd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Newport .75
+    second: {fileID: 2100000, guid: 2af9ad56bea37ce418fea614464a2f04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Viewing Platform .25
+    second: {fileID: 2100000, guid: 07c48ff084e86594496a36856aaedf21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - JT to Viewing Platform .5
+    second: {fileID: 2100000, guid: 8de8aa95dbb634b4881791c6e84f515e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - Jamestown
+    second: {fileID: 2100000, guid: 0f9803c62871a084290444aef2048e4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - NP to Central Tower .25
+    second: {fileID: 2100000, guid: a0164fc8e32f8c44cbec1a516eecd143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - NP to Central Tower .5
+    second: {fileID: 2100000, guid: 134ba23930e002649a12f64a8a0bf2ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - NP to Jamestown .75
+    second: {fileID: 2100000, guid: faaa6a7050efee74c98da37829e52fd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - NP to Viewing Platform .25
+    second: {fileID: 2100000, guid: af6a3ee0edda23e41a362c582db58312, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - NP to Viewing Platform .5
+    second: {fileID: 2100000, guid: 372185b4abe7604459189c0177d80091, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - Newport
+    second: {fileID: 2100000, guid: 3fccae2a11cbe4844b0e3844065d8128, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Miles - Viewing Platform
+    second: {fileID: 2100000, guid: dd5a0e392e8164f4bb69e3dd42bc911f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: 5ce053f88d86aa84c9d468a987479c81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished Concrete New [imported]
+    second: {fileID: 2100000, guid: 7795395ad72439e4ab06194309c316fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 2 - Bike and Ped
+    second: {fileID: 2100000, guid: bf8798b52c315e5469f692b45b565719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 3 - Bike and Ped
+    second: {fileID: 2100000, guid: d7ce0a971a2f5894fabef3111d3e1387, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 4 - Bike and Ped opp
+    second: {fileID: 2100000, guid: bdde3cb5915340d4c85f1e6229c00427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 5 - Ped Label
+    second: {fileID: 2100000, guid: e6821c025bdf89946b640f8926bb5d68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 6 - Bike Label
+    second: {fileID: 2100000, guid: ed07ce071b1dfbe4995cc79a8ab0ba51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 7 - Shared Label
+    second: {fileID: 2100000, guid: 8517c6c00b5ed18498b1eae7dc1fd05b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 8 - Ped Symbol
+    second: {fileID: 2100000, guid: 8e23d6c226089154692a3489554dc577, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signage 9 - Bike Symbol
+    second: {fileID: 2100000, guid: ff24385e3b0f556458460582de1c54e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terrain Detail
+    second: {fileID: 2100000, guid: 23805d44f441a7549b3007ae94ccbdf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Translucent Glass Gray
+    second: {fileID: 2100000, guid: 01fe59b60925bfc4893e1f3d3d7dd96b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Plank
+    second: {fileID: 2100000, guid: 1d7fa3187b0a9734cb2a95024fd670ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Veneer 02 [imported] [imported]
+    second: {fileID: 2100000, guid: fa3de1bc80bf7ae4096578b462f5ca0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Gray_2
+    second: {fileID: 2100000, guid: 52108031fcedf68448924273d6a55b02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _White_
+    second: {fileID: 2100000, guid: 2bb0b95b06b282445bbac760c18f3208, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 28dcf79c858eab24ebd26f5257a5c182, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boxy graphic poster [imported]
+    second: {fileID: 2100000, guid: 0e42f5350c670054dac2038a5d7aabed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_grey
+    second: {fileID: 2100000, guid: fe6526a7d813d3b419472fae9b9606b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark grey
+    second: {fileID: 2100000, guid: ee7c01f1420d6c646a368662d059fec0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gray_paint
+    second: {fileID: 2100000, guid: d526ca273a8345d45af8595331b2caad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: 66792d31700f7ac46b90b37ced290541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light grey
+    second: {fileID: 2100000, guid: de750bc56691f8e42aeca72d56eab155, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light grey [imported]
+    second: {fileID: 2100000, guid: a13eec37ec54c144d8e7780ec25d09b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rail
+    second: {fileID: 2100000, guid: 29bb7ef449874bc409e85036aea877ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ripta sign
+    second: {fileID: 2100000, guid: 1d5d0e8b1a6396b488cd6a623f06b00e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trussFRP
+    second: {fileID: 2100000, guid: 23d3c54b324a16b4fa3fc166a2eef116, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: f89a8f16d6a2544479d3f355a405672e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 72_corten steel PBR texture-seamless
+    second: {fileID: 2800000, guid: 3121ec5b1c3612c4bb8deb2117d89da2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 77_iron wire mesh perforate metal texture-seamless
+    second: {fileID: 2800000, guid: 15a4c12d6eeae7a43b7a16ca9dbcfa2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AmbientOcclusionMap
+    second: {fileID: 2800000, guid: 02fa847e566027548bbb93f231cecfb4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BR Central Tower
+    second: {fileID: 2800000, guid: 92e1e3421f10491448874adb16ce1246, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BR Jamestown
+    second: {fileID: 2800000, guid: 92f11c6c63bf87546b3fdb8f28f01d75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BR Newport
+    second: {fileID: 2800000, guid: 584ecd9ae73fe9e46a3352f29f2e1bac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BR Viewing Platform
+    second: {fileID: 2800000, guid: bf1f1d32762853a44803b861fe571450, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bike Path
+    second: {fileID: 2800000, guid: 223958454e30f6548a10b0a11b7bce91, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bike Symbol
+    second: {fileID: 2800000, guid: 57834d1ded2ce544a96aef90b542349e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DisplacementMap
+    second: {fileID: 2800000, guid: fbe267c30cf592d4c91377ff6ce13ab9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to central tower 75
+    second: {fileID: 2800000, guid: f16e05decdd4ce84fa7c0f7786a787ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to newport 25
+    second: {fileID: 2800000, guid: c3ef351e7eb9f6b42931532d18f952f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to newport 5
+    second: {fileID: 2800000, guid: 266044585df443048bc24e140ebe1944, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to newport 75
+    second: {fileID: 2800000, guid: ac4827875f51f3840af21932b91506f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to viewing platform 25
+    second: {fileID: 2800000, guid: e1a91c1871730e2498e9ef856d1767d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JT to viewing platform 5
+    second: {fileID: 2800000, guid: 304a3595047a7c648aed95877e5f8579, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NP to central tower 25
+    second: {fileID: 2800000, guid: 53e68c8959e714b47a25786a846878a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NP to central tower 5
+    second: {fileID: 2800000, guid: 376c53cfa73c615488fa035c3a0f83a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NP to jamestown 75
+    second: {fileID: 2800000, guid: 81d3ac0958bda454ebaa8a0081b3f7c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NP to viewing platform 25
+    second: {fileID: 2800000, guid: c5d6b4159973eb048bdb344d4cc1bbd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NP to viewing platform 5
+    second: {fileID: 2800000, guid: 16957f90b97cb204b8f38a07529e8041, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pedestrian
+    second: {fileID: 2800000, guid: 14737eb8336cb48479a680bfc8f62d3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pedestrian Path
+    second: {fileID: 2800000, guid: af00606edd9b071478cdf10173b26b03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Polished Concrete New
+    second: {fileID: 2800000, guid: 2208317c53a59bb44ba4e05452c30d90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shared-use Path
+    second: {fileID: 2800000, guid: 0745b9ad0110a6d44bd4262adc1052db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TerrainDetail_modified_MG
+    second: {fileID: 2800000, guid: 424de58836699e846bcbe80efb2b9876, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wood_PlanksTemple_3x3_1K_albedo
+    second: {fileID: 2800000, guid: c6a36b52a990ffc41a654e91290b1021, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wood_PlanksTemple_3x3_1K_roughness
+    second: {fileID: 2800000, guid: dbdb361107978cd40af540fb2eb2323f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bike and pedestrian 2
+    second: {fileID: 2800000, guid: 0acd93af551b91b41b948ba4b93c589e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bike and pedestrian 3
+    second: {fileID: 2800000, guid: 139792cae9c5cc846b4f1d9c5b70b51a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bust stop
+    second: {fileID: 2800000, guid: 4e64ba970cd66784d94966675d7997e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_grey
+    second: {fileID: 2800000, guid: 0ac6df6136a99b24f968ef9849f60728, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: finalconcert4
+    second: {fileID: 2800000, guid: a833828caf3a6474db74df688c4e36bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: finalconcert7
+    second: {fileID: 2800000, guid: ad8283bbdb4f92e49abda5278fe5cc55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_0016_metallic_4k
+    second: {fileID: 2800000, guid: cc9fa08ef517d1444ab239bc1f87b68f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

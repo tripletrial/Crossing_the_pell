@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 73e1b54cba4c6b94ea8d6219157846fb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: //RootNode
+    100004: 'industrial_robots [arm1 '
+    100006: industrial_robots [arm1  1
+    100008: industrial_robots [arm1  2
+    100010: industrial_robots [arm1  3
+    100012: 'industrial_robots [arm1_rotator '
+    100014: industrial_robots [arm1_rotator  1
+    100016: industrial_robots [arm1_rotator  2
+    100018: industrial_robots [arm1_rotator  3
+    100020: 'industrial_robots [arm2 '
+    100022: industrial_robots [arm2  1
+    100024: industrial_robots [arm2  2
+    100026: industrial_robots [arm2  3
+    100028: 'industrial_robots [arm2_front_rotator '
+    100030: industrial_robots [arm2_front_rotator  1
+    100032: industrial_robots [arm2_front_rotator  2
+    100034: 'industrial_robots [base '
+    100036: industrial_robots [base  1
+    100038: industrial_robots [base  2
+    100040: industrial_robots [base  3
+    100042: 'industrial_robots [holder '
+    100044: industrial_robots [holder  1
+    100046: industrial_robots [screwdriver]
+    100048: industrial_robots [vacuum_holder1]
+    100050: industrial_robots [vacuum_holder2]
+    100052: 'industrial_robots [weight_arm '
+    100054: industrial_robots [weight_arm  1
+    100056: industrial_robots [weight_arm  2
+    100058: industrial_robots [weight_arm  3
+    100060: industrial_robots [welding_gun]
+    100062: industrial_robots [welding_gun_arm1]
+    100064: industrial_robots [welding_gun_arm2]
+    100066: 'rotation_axis '
+    100068: rotation_axis  1
+    100070: rotation_axis  10
+    100072: rotation_axis  11
+    100074: rotation_axis  12
+    100076: rotation_axis  13
+    100078: rotation_axis  14
+    100080: rotation_axis  15
+    100082: rotation_axis  16
+    100084: rotation_axis  17
+    100086: rotation_axis  18
+    100088: rotation_axis  19
+    100090: rotation_axis  2
+    100092: rotation_axis  20
+    100094: rotation_axis  21
+    100096: rotation_axis  22
+    100098: rotation_axis  3
+    100100: rotation_axis  4
+    100102: rotation_axis  5
+    100104: rotation_axis  6
+    100106: rotation_axis  7
+    100108: rotation_axis  8
+    100110: rotation_axis  9
+    400000: Camera
+    400002: //RootNode
+    400004: 'industrial_robots [arm1 '
+    400006: industrial_robots [arm1  1
+    400008: industrial_robots [arm1  2
+    400010: industrial_robots [arm1  3
+    400012: 'industrial_robots [arm1_rotator '
+    400014: industrial_robots [arm1_rotator  1
+    400016: industrial_robots [arm1_rotator  2
+    400018: industrial_robots [arm1_rotator  3
+    400020: 'industrial_robots [arm2 '
+    400022: industrial_robots [arm2  1
+    400024: industrial_robots [arm2  2
+    400026: industrial_robots [arm2  3
+    400028: 'industrial_robots [arm2_front_rotator '
+    400030: industrial_robots [arm2_front_rotator  1
+    400032: industrial_robots [arm2_front_rotator  2
+    400034: 'industrial_robots [base '
+    400036: industrial_robots [base  1
+    400038: industrial_robots [base  2
+    400040: industrial_robots [base  3
+    400042: 'industrial_robots [holder '
+    400044: industrial_robots [holder  1
+    400046: industrial_robots [screwdriver]
+    400048: industrial_robots [vacuum_holder1]
+    400050: industrial_robots [vacuum_holder2]
+    400052: 'industrial_robots [weight_arm '
+    400054: industrial_robots [weight_arm  1
+    400056: industrial_robots [weight_arm  2
+    400058: industrial_robots [weight_arm  3
+    400060: industrial_robots [welding_gun]
+    400062: industrial_robots [welding_gun_arm1]
+    400064: industrial_robots [welding_gun_arm2]
+    400066: 'rotation_axis '
+    400068: rotation_axis  1
+    400070: rotation_axis  10
+    400072: rotation_axis  11
+    400074: rotation_axis  12
+    400076: rotation_axis  13
+    400078: rotation_axis  14
+    400080: rotation_axis  15
+    400082: rotation_axis  16
+    400084: rotation_axis  17
+    400086: rotation_axis  18
+    400088: rotation_axis  19
+    400090: rotation_axis  2
+    400092: rotation_axis  20
+    400094: rotation_axis  21
+    400096: rotation_axis  22
+    400098: rotation_axis  3
+    400100: rotation_axis  4
+    400102: rotation_axis  5
+    400104: rotation_axis  6
+    400106: rotation_axis  7
+    400108: rotation_axis  8
+    400110: rotation_axis  9
+    2300000: 'industrial_robots [arm1 '
+    2300002: industrial_robots [arm1  1
+    2300004: industrial_robots [arm1  2
+    2300006: industrial_robots [arm1  3
+    2300008: 'industrial_robots [arm1_rotator '
+    2300010: industrial_robots [arm1_rotator  1
+    2300012: industrial_robots [arm1_rotator  2
+    2300014: industrial_robots [arm1_rotator  3
+    2300016: 'industrial_robots [arm2 '
+    2300018: industrial_robots [arm2  1
+    2300020: industrial_robots [arm2  2
+    2300022: industrial_robots [arm2  3
+    2300024: 'industrial_robots [arm2_front_rotator '
+    2300026: industrial_robots [arm2_front_rotator  1
+    2300028: industrial_robots [arm2_front_rotator  2
+    2300030: 'industrial_robots [base '
+    2300032: industrial_robots [base  1
+    2300034: industrial_robots [base  2
+    2300036: industrial_robots [base  3
+    2300038: 'industrial_robots [holder '
+    2300040: industrial_robots [holder  1
+    2300042: industrial_robots [screwdriver]
+    2300044: industrial_robots [vacuum_holder1]
+    2300046: industrial_robots [vacuum_holder2]
+    2300048: 'industrial_robots [weight_arm '
+    2300050: industrial_robots [weight_arm  1
+    2300052: industrial_robots [weight_arm  2
+    2300054: industrial_robots [weight_arm  3
+    2300056: industrial_robots [welding_gun]
+    2300058: industrial_robots [welding_gun_arm1]
+    2300060: industrial_robots [welding_gun_arm2]
+    3300000: 'industrial_robots [arm1 '
+    3300002: industrial_robots [arm1  1
+    3300004: industrial_robots [arm1  2
+    3300006: industrial_robots [arm1  3
+    3300008: 'industrial_robots [arm1_rotator '
+    3300010: industrial_robots [arm1_rotator  1
+    3300012: industrial_robots [arm1_rotator  2
+    3300014: industrial_robots [arm1_rotator  3
+    3300016: 'industrial_robots [arm2 '
+    3300018: industrial_robots [arm2  1
+    3300020: industrial_robots [arm2  2
+    3300022: industrial_robots [arm2  3
+    3300024: 'industrial_robots [arm2_front_rotator '
+    3300026: industrial_robots [arm2_front_rotator  1
+    3300028: industrial_robots [arm2_front_rotator  2
+    3300030: 'industrial_robots [base '
+    3300032: industrial_robots [base  1
+    3300034: industrial_robots [base  2
+    3300036: industrial_robots [base  3
+    3300038: 'industrial_robots [holder '
+    3300040: industrial_robots [holder  1
+    3300042: industrial_robots [screwdriver]
+    3300044: industrial_robots [vacuum_holder1]
+    3300046: industrial_robots [vacuum_holder2]
+    3300048: 'industrial_robots [weight_arm '
+    3300050: industrial_robots [weight_arm  1
+    3300052: industrial_robots [weight_arm  2
+    3300054: industrial_robots [weight_arm  3
+    3300056: industrial_robots [welding_gun]
+    3300058: industrial_robots [welding_gun_arm1]
+    3300060: industrial_robots [welding_gun_arm2]
+    4300000: Mesh
+    4300002: Mesh
+    4300004: Mesh
+    4300006: Mesh
+    4300008: Mesh
+    4300010: Mesh
+    4300012: Mesh
+    4300014: Mesh
+    4300016: Mesh
+    4300018: Mesh
+    4300020: Mesh
+    4300022: Mesh
+    4300024: Mesh
+    4300026: 'industrial_robots [base '
+    4300028: 'industrial_robots [arm1_rotator '
+    4300030: 'industrial_robots [weight_arm '
+    4300032: 'industrial_robots [arm1 '
+    4300034: 'industrial_robots [arm2 '
+    4300036: 'industrial_robots [arm2_front_rotator '
+    4300038: industrial_robots [screwdriver]
+    4300040: 'industrial_robots [base '
+    4300042: 'industrial_robots [arm1_rotator '
+    4300044: 'industrial_robots [weight_arm '
+    4300046: 'industrial_robots [arm1 '
+    4300048: 'industrial_robots [arm2 '
+    4300050: industrial_robots [welding_gun]
+    4300052: industrial_robots [welding_gun_arm1]
+    4300054: industrial_robots [welding_gun_arm2]
+    4300056: 'industrial_robots [base '
+    4300058: 'industrial_robots [arm1_rotator '
+    4300060: 'industrial_robots [weight_arm '
+    4300062: 'industrial_robots [arm1 '
+    4300064: 'industrial_robots [arm2 '
+    4300066: 'industrial_robots [arm2_front_rotator '
+    4300068: 'industrial_robots [holder '
+    4300070: industrial_robots [vacuum_holder1]
+    4300072: 'industrial_robots [base '
+    4300074: 'industrial_robots [arm1_rotator '
+    4300076: 'industrial_robots [weight_arm '
+    4300078: 'industrial_robots [arm1 '
+    4300080: 'industrial_robots [arm2 '
+    4300082: 'industrial_robots [arm2_front_rotator '
+    4300084: 'industrial_robots [holder '
+    4300086: industrial_robots [vacuum_holder2]
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: b0988aabfb2fdce488e6ba4c7378897b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic
+    second: {fileID: 2100000, guid: 17a3213da4596bc45a476efe0c5bc379, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 43
+    normalImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
