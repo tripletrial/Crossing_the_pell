@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 1087651006, guid: 687342cf62e14964f9620e5dc2866afa, type: 3}
   m_Name: TurnAngle
   m_EditorClassIdentifier: 
-  value: 4.66
+  value: 0
