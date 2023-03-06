@@ -209,6 +209,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
+  - {fileID: 2}
   - {fileID: 8}
   - {fileID: 9}
   - {fileID: 2}
@@ -644,8 +645,8 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.36064512, y: 0.49583173, z: -0.23731484, w: 0.75350803}
-  m_LastSceneViewOrtho: 1
+  m_LastSceneViewRotation: {x: -0.0022848968, y: -0.83022046, z: -0.0034058406, w: 0.5574389}
+  m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
