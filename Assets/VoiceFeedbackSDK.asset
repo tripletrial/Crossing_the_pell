@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: VoiceFeedbackSDK
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 11400000}
+    name: ctpfeedback
+    id: 766280967940418
+    lang: en
+    isPrivate: 0
+    createdAt: 2023-03-06T11:49:18-0800
+  configId: 04d59f6fc82db5c4d8794abc20f39f1d
+  clientAccessToken: 6RO5IO55D36E72ZPOQA7MBY65EODWYIZ
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+    dictation: 
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 535a80e2-6fc8-4991-b707-50dd0c862dfb
+    name: wit$number
+    lookups: []
+    roles:
+    - id: 1161995544449436
+      name: number
+    keywords: []
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 909128400301645
+    name: giveRating
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 1161995544449436
+      name: wit$number:number
+      lookups: []
+      roles: []
+      keywords: []
+  traits: []
+  isDemoOnly: 0
+  useConduit: 0
+  manifestLocalPath: ConduitManifest-1f430c28-6000-4cf1-94af-4b826a01691d.json
+  autoGenerateManifest: 0
+  openManifestOnGeneration: 0
