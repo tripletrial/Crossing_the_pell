@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Uduino/Examples/Advanced/Arduino Mega/MegaReadWrite.cs.meta
 guid: d36b4fd42e52fd74fb5ea4e059105248
 timeCreated: 1552835684
+========
+guid: 86d42f15a79a0cd46b43192e6e664c17
+timeCreated: 1496307543
+>>>>>>>> Arduino_Sensor_Development:Assets/Uduino/Examples/Advanced/BoardType/ChangeBoardType.cs.meta
 licenseType: Store
 MonoImporter:
   serializedVersion: 2
