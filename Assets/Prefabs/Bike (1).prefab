@@ -4587,6 +4587,8 @@ GameObject:
   - component: {fileID: 8497110366780518492}
   - component: {fileID: 5437893854941456628}
   - component: {fileID: 890386218192137108}
+  - component: {fileID: 2216232205318951441}
+  - component: {fileID: 5067729984135608173}
   m_Layer: 0
   m_Name: Bike (1)
   m_TagString: Player
@@ -4906,6 +4908,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionCanvas: {fileID: 2122237987446534312}
+--- !u!114 &2216232205318951441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089151811269447853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01b078026ab30f408cdc910f35b575f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 0.02
+  BlyncSensorSpeed: {fileID: 11400000, guid: 8bdab0e328a0ecd40888f3d5a73f55bd, type: 2}
+  radius: 0.23
+  numOfStrips: 8
+  setRPM: 100
+  isTesting: 1
+--- !u!114 &5067729984135608173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089151811269447853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab0bdcae345b7a4ca4d1e7e7956f0c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftController: {fileID: 7524857118014444447}
+  rightController: {fileID: 7524857118014455747}
+  VRtrackingspace: {fileID: 7524857118014618277}
+  VRcamera: {fileID: 7524857118014677985}
+  recenter: 0
 --- !u!1 &7089151811352094783
 GameObject:
   m_ObjectHideFlags: 0

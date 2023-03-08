@@ -6,34 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5453505452045d030956557012220d44434f1b7f292c276578784f65e1b9326c
-      flags: 0
-    RecentlyUsedSceneGuid-1:
       value: 5600515400500a5d5a5f0a7014775d44134f48797f2a7632797e496bb7b13039
       flags: 0
-    RecentlyUsedSceneGuid-2:
+    RecentlyUsedSceneGuid-1:
       value: 020502000407500d0c59587514250644144f4d2b2a717f6378791963e6b2363a
       flags: 0
-    RecentlyUsedSceneGuid-3:
+    RecentlyUsedSceneGuid-2:
       value: 010857565702500c08585e2347260f44124e1d7f792b76672c2f1860b3e5673a
       flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 5b0406030002085a0e580a2049215d44144f4d78747f76672f7a4b32bbb73169
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 0205035e53065a0c5d0f547648210e444f164c722d7176647428496ab0b7653c
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 5455020352045f0a0b0a5d7548275d44144e4c7f2f7b20672f2f4832b5e5316d
-      flags: 0
-    RecentlyUsedSceneGuid-7:
+    RecentlyUsedSceneGuid-3:
       value: 5b5001025c025e0a5c585f7b137a0e44104e1c787c71723578701f35b3b8326a
       flags: 0
-    RecentlyUsedSceneGuid-8:
+    RecentlyUsedSceneGuid-4:
       value: 5754565f56020a0c5f59552011255b44474e1e737d2925332f7a4862bbe3623c
       flags: 0
-    RecentlyUsedSceneGuid-9:
+    RecentlyUsedSceneGuid-5:
+      value: 5257555654065f0b0e085d7311225d44404f4c2b7f2d24347c794535b0b9656b
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 0205035e53065a0c5d0f547648210e444f164c722d7176647428496ab0b7653c
+      flags: 0
+    RecentlyUsedSceneGuid-7:
       value: 570903565d515e0b590f5d7b427b5944424e1a2b287c77612f2c4431e3e3656d
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5455020352045f0a0b0a5d7548275d44144e4c7f2f7b20672f2f4832b5e5316d
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5b0406030002085a0e580a2049215d44144f4d78747f76672f7a4b32bbb73169
       flags: 0
     RecentlyUsedScenePath-0:
       value: 2242470311464672030a1931043156111a280a252e273223621a1e36ece52777c3f53ba9c63436313816ea3844132671e704001fef
