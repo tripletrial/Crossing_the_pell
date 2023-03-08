@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/recenteringThroughControllerLocation.cs.meta
 guid: 5ab0bdcae345b7a4ca4d1e7e7956f0c9
+========
+guid: 469ab263da3e9df438168c09820b1586
+timeCreated: 1549723387
+licenseType: Store
+>>>>>>>> Arduino_Sensor_Development:Assets/Uduino/Editor/UduinoManagerWindow.cs.meta
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
