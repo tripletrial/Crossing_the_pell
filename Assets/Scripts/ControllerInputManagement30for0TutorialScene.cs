@@ -14,34 +14,56 @@ using UnityEngine.SceneManagement;
 /// managing all the controller input and the keyboard input
 /// the keyboard is the backup controll plan
 /// Functions:
-///     01) show and hide the menu 
+///     01) show and hide the menu
 ///     02) select scene and load
 ///     03) skip the tuturial
 ///         => confirm and load the scene
 /// </summary>
-public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
+public class ControllerInputManagement30for0TutorialScene : MonoBehaviour
+{
     #region field
     #region SerializeField
-    [SerializeField] InputActionProperty leftTriggerBtn;
-    [SerializeField] InputActionProperty rightTriggerBtn;
-    [SerializeField] InputActionProperty btnA;
+    [SerializeField]
+    InputActionProperty leftTriggerBtn;
+
+    [SerializeField]
+    InputActionProperty rightTriggerBtn;
+
+    [SerializeField]
+    InputActionProperty btnA;
     List<GameObject> mainMenuBtnLst;
+
     // string[] mainMenuBtnNames;
     List<GameObject> sceneImgLst;
+
     // string[] sceneImgNames;
-    [SerializeField] languageBool myLanguageBool;
-    [SerializeField] List<GameObject> projectList;
-    [SerializeField] GameObject allBridge;
-    [SerializeField] GameObject[] bridgeList; 
+    [SerializeField]
+    languageBool myLanguageBool;
+
+    [SerializeField]
+    List<GameObject> projectList;
+
+    [SerializeField]
+    GameObject allBridge;
+
+    [SerializeField]
+    GameObject[] bridgeList;
     //[SerializeField] TextMeshProUGUI tuturialMsgInfo;
     //[SerializeField] TextMeshProUGUI loadingMsgBox;
     #endregion
     #region variable
-    Mover myMover;  //GameObject.FindObjectOfType<Mover>();
-    List<string> sceneNameLst = new List<string>{"1_Inhabited_Bridge_Bike", "2_Conductivity_Bike", "3_All_The_Worlds_a_Stage", "4_The_Net_bike" };
+    Mover myMover; //GameObject.FindObjectOfType<Mover>();
+    List<string> sceneNameLst = new List<string>
+    {
+        "1_Inhabited_Bridge_Bike",
+        "2_Conductivity_Bike",
+        "3_All_The_Worlds_a_Stage",
+        "4_The_Net_bike"
+    };
     GameObject flexibleCube; //= GameObject.FindGameObjectWithTag("testCube");
     GameObject mainMenu; //= GameObject.FindGameObjectWithTag("menu_main");
     GameObject subMenu_01; //= GameObject.FindGameObjectWithTag("menu_sub_01");
+
     // hold for HOLDTIME2, and confirm the scene
     // const float HOLDTIME_CONFIRM = 3.0f;
     // float bothTriggerPressStartTime;
@@ -56,6 +78,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
     float progressBarScale;
     float leftTriggerValue;
     float rightTriggerValue;
+
     // flags
     bool hasSceneMenuShowed = false;
     bool hasRightTriggerClicken = false;
@@ -67,18 +90,33 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
     #region property
     // outside envt can only get the scale, and cannot set the value
     public float ProgressBarScale { get; }
-    public bool HasSceneMenuShowed { get => hasSceneMenuShowed; }
-    public bool HasRightTriggerClicken { get => hasRightTriggerClicken; }
-    public bool HasLeftTriggerClicken { get => hasLeftTriggerClicken; }
-    public bool HasSubSceneMenuShowed { get => hasSubSceneMenuShowed; }
-    public bool HasMenuClosed { get => hasMenuClosed; }
+    public bool HasSceneMenuShowed
+    {
+        get => hasSceneMenuShowed;
+    }
+    public bool HasRightTriggerClicken
+    {
+        get => hasRightTriggerClicken;
+    }
+    public bool HasLeftTriggerClicken
+    {
+        get => hasLeftTriggerClicken;
+    }
+    public bool HasSubSceneMenuShowed
+    {
+        get => hasSubSceneMenuShowed;
+    }
+    public bool HasMenuClosed
+    {
+        get => hasMenuClosed;
+    }
     bool stoppedLooping = false;
     public GameObject[] SpeedoMeters;
-    
+
     public GameObject transitionCanvas;
     #endregion
     #region method
-    
+
     void Start()
     {
         #region checkNull
@@ -90,7 +128,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             flexibleCube = GameObject.FindGameObjectWithTag("testCube");
             mainMenu = GameObject.FindGameObjectWithTag("menu_main");
             subMenu_01 = GameObject.FindGameObjectWithTag("menu_sub_01");
-            mainMenuBtnLst = GameObject.FindGameObjectsWithTag("mainBtn").ToList();  // get gameObjects
+            mainMenuBtnLst = GameObject.FindGameObjectsWithTag("mainBtn").ToList(); // get gameObjects
             mainMenuBtnLst = mainMenuBtnLst.OrderBy(element => element.name).ToList(); // sort by name
             sceneImgLst = GameObject.FindGameObjectsWithTag("subSceneBtn").ToList(); // get gameObjects
             sceneImgLst = sceneImgLst.OrderBy(element => element.name).ToList(); // sort
@@ -100,7 +138,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             Debug.Log("---Fail: sth. NOT loaded---");
             Debug.Log(err.Message);
         }
-        
+
         //Use the constructor: new List<object>(myArray), to convert an array to a list
         if (sceneImgLst != null)
         {
@@ -110,7 +148,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
         {
             Debug.Log($"---Fail: sceneImgLst not loaded---");
         }
-        if(mainMenu != null)
+        if (mainMenu != null)
         {
             Debug.Log($"---success: mainMenu loaded---");
         }
@@ -130,7 +168,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
 
         mainMenu.SetActive(false);
         subMenu_01.SetActive(false);
-        
+
         progressBarScale = 0f;
         currentSelectedIndex = 0;
         //mainBtnListLength = mainMenuBtnLst.Count;
@@ -141,10 +179,14 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
     void Update()
     {
         currentTime = Time.time;
-        leftTriggerValue = leftTriggerBtn.action.ReadValue<float>(); 
+        leftTriggerValue = leftTriggerBtn.action.ReadValue<float>();
         rightTriggerValue = rightTriggerBtn.action.ReadValue<float>();
         // Testing for both the triggers' input
-        flexibleCube.transform.localScale = new Vector3(rightTriggerValue * 0.1f, leftTriggerValue * 0.1f, 1f);
+        flexibleCube.transform.localScale = new Vector3(
+            rightTriggerValue * 0.1f,
+            leftTriggerValue * 0.1f,
+            1f
+        );
         CheckTriggersFrozenTime();
         #region menuInput
         // safety, if not in the tutorialScene, but no needed since the script is unique
@@ -171,21 +213,23 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             else if (mainMenu.activeSelf && !subMenu_01.activeSelf && isTriggerActive)
             {
                 // left trigger, confirm the selected btn CONFIRM => show the SubSceneMenu
-                if ((leftTriggerValue > 0.75f && rightTriggerValue < 0.05f) || Input.GetKeyUp(KeyCode.Escape))
+                if (
+                    (leftTriggerValue > 0.75f && rightTriggerValue < 0.05f)
+                    || Input.GetKeyUp(KeyCode.Escape)
+                )
                 {
                     hasLeftTriggerClicken = true;
                     FreezeTriggers();
-                    
+
                     // MainMenu btn click
                     switch (currentSelectedIndex)
                     {
-                        
                         case 0: // show the sub scene menu, and hide the main menu
                             mainMenu.SetActive(false); // hide main menu
                             subMenu_01.SetActive(true); // show sub menu
                             currentSelectedIndex = 0; // refresh/update index to 0
                             RenderSubMenuSelectedImg(currentSelectedIndex, sceneImgLst); // highlight the selected img
-                            RenderSelectedProject(currentSelectedIndex,projectList); // update the background
+                            RenderSelectedProject(currentSelectedIndex, projectList); // update the background
                             hasSubSceneMenuShowed = true;
                             break;
                         case 1: // Recenter
@@ -215,11 +259,17 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
                     FreezeTriggers();
                 }
                 // true means that the right trigger is pressed SWITCH
-                if ((rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive) || Input.GetKeyDown("n"))
+                if (
+                    (rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive)
+                    || Input.GetKeyDown("n")
+                )
                 {
                     // if (tuturialStep == 1) tuturialStep = 2;
                     currentSelectedIndex++;
-                    currentSelectedIndex = CheckListIndex(currentSelectedIndex, mainMenuBtnLst.Count);
+                    currentSelectedIndex = CheckListIndex(
+                        currentSelectedIndex,
+                        mainMenuBtnLst.Count
+                    );
                     RenderSelectedImg(currentSelectedIndex, mainMenuBtnLst);
                     FreezeTriggers();
                     hasRightTriggerClicken = true;
@@ -230,32 +280,42 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             {
                 // looping
                 allBridge.GetComponent<bridgeLooping>().isLooping = false; // stop the looping
-                if (stoppedLooping != true){
-                foreach (GameObject bridge in bridgeList)
+                if (stoppedLooping != true)
                 {
-                    bridge.GetComponent<Dissolver_Stage>().show = false;
-                    bridge.GetComponent<Dissolver_Stage>().Duration = 1f;
+                    foreach (GameObject bridge in bridgeList)
+                    {
+                        bridge.GetComponent<Dissolver_Stage>().show = false;
+                        bridge.GetComponent<Dissolver_Stage>().Duration = 1f;
+                    }
+                    stoppedLooping = true;
                 }
-                stoppedLooping = true;
-                } 
 
                 // true means that the RIGHT trigger is pressed --- SWITCH
-                if ((rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive) || Input.GetKeyDown("n"))
+                if (
+                    (rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive)
+                    || Input.GetKeyDown("n")
+                )
                 {
                     currentSelectedIndex++;
                     currentSelectedIndex = CheckListIndex(currentSelectedIndex, sceneImgLst.Count);
                     RenderSubMenuSelectedImg(currentSelectedIndex, sceneImgLst);
-                    if(currentSelectedIndex < projectList.Count){
+                    if (currentSelectedIndex < projectList.Count)
+                    {
                         RenderSelectedProject(currentSelectedIndex, projectList); // update the background;
-                    }else{
+                    }
+                    else
+                    {
                         Debug.Log("Cursor on Back Btn");
                     }
-                    // careful: sceneImgLst has one more element than projectList, the BACK 
+                    // careful: sceneImgLst has one more element than projectList, the BACK
                     hasRightTriggerClicken = true;
                     FreezeTriggers();
                 }
                 // true means that the LEFT trigger is pressed --- CONFIRM
-                if ((leftTriggerValue > 0.75f && rightTriggerValue < 0.05f) || Input.GetKeyUp(KeyCode.Escape))
+                if (
+                    (leftTriggerValue > 0.75f && rightTriggerValue < 0.05f)
+                    || Input.GetKeyUp(KeyCode.Escape)
+                )
                 {
                     hasLeftTriggerClicken = true;
                     // MainMenu btn click
@@ -267,7 +327,10 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
                     else
                     {*/
                     //string currentSelectedSceneName = sceneNameLst[currentSelectedIndex];
-                    if (currentSelectedIndex < sceneImgLst.Count - 1 && currentSceneName != "0_StartingScene 1")
+                    if (
+                        currentSelectedIndex < sceneImgLst.Count - 1
+                        && currentSceneName != "0_StartingScene 1"
+                    )
                     {
                         SceneManager.LoadScene(sceneNameLst[currentSelectedIndex]);
                     }
@@ -283,13 +346,14 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
                 }
             }
         }
-        else 
+        else
         {
             if ((leftTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("n"))
             {
                 // TO DO: english
                 myLanguageBool.isEn = true;
-            } else if((rightTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("m"))
+            }
+            else if ((rightTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("m"))
             {
                 // TO DO: spanish
                 myLanguageBool.isEn = false;
@@ -297,6 +361,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
         }
         #endregion
     }
+
     /// <summary>
     /// Helper Method
     /// </summary>
@@ -305,7 +370,6 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
     /// <returns>int</returns>
     int CheckListIndex(int index, int upperBoundary)
     {
-
         if (index < 0)
         {
             index += upperBoundary;
@@ -315,7 +379,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
         {
             index -= upperBoundary;
         }
-        
+
         if (index >= 0 && index < upperBoundary)
         {
             return index; // safe, return index - Base Case
@@ -325,9 +389,9 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             CheckListIndex(index, upperBoundary); // recursion
         }
 
-
         return 0; // in case of death loop
     }
+
     void RenderSelectedImg(int index, List<GameObject> imgList)
     {
         // if(sceneImgLst.Count != 0)
@@ -342,7 +406,7 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
         //     selectedSceneImg.transform.localScale = new Vector3(SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO);
         // }
 
-        if(sceneImgLst.Count != 0)
+        if (sceneImgLst.Count != 0)
         {
             // first, reset all img to (1f,1f,1f)
             foreach (GameObject obj in imgList)
@@ -351,13 +415,12 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
                 obj.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
             }
             // then
-            
+
             GameObject selectedSceneImg = imgList[index];
             selectedSceneImg.GetComponent<UnityEngine.UI.Image>().enabled = false;
             selectedSceneImg.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
             //selectedSceneImg.transform.localScale = new Vector3(SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO);
         }
-
     }
 
     void RenderSubMenuSelectedImg(int index, List<GameObject> imgList)
@@ -374,18 +437,19 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
             selectedSceneImg.GetComponent<UnityEngine.UI.Image>().enabled = true; // render highlight
             //selectedSceneImg.transform.localScale = new Vector3(SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO);
         }
-
     }
 
-    void RenderSelectedProject(int index, List<GameObject> projectList){
-        GameObject selectedProject = projectList[index]; // careful: sceneImgLst has one more element than projectList, the BACK 
-        if(selectedProject != null){
+    void RenderSelectedProject(int index, List<GameObject> projectList)
+    {
+        GameObject selectedProject = projectList[index]; // careful: sceneImgLst has one more element than projectList, the BACK
+        if (selectedProject != null)
+        {
             foreach (GameObject project in projectList)
-                {
-                    project.GetComponent<Dissolver_Stage>().show = false;
-                }
-            selectedProject.GetComponent<Dissolver_Stage>().show = true;
+            {
+                project.GetComponent<Dissolver_Stage>().show = false;
             }
+            selectedProject.GetComponent<Dissolver_Stage>().show = true;
+        }
     }
 
     void FreezeTriggers()
@@ -397,12 +461,13 @@ public class ControllerInputManagement30for0TutorialScene : MonoBehaviour {
 
     void CheckTriggersFrozenTime()
     {
-
-        if(triggersFreezeStartTime != 0 && ((currentTime - triggersFreezeStartTime) > TRIGGER_FREEZETIME))
+        if (
+            triggersFreezeStartTime != 0
+            && ((currentTime - triggersFreezeStartTime) > TRIGGER_FREEZETIME)
+        )
         {
             isTriggerActive = true;
         }
-
     }
     #endregion
 }

@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/00_Scenes/1_Inhabited_Bridge_Bike.unity
+    guid: b9c02797e62a7e04d9e55c07afe31e3b
+  - enabled: 1
+    path: Assets/00_Scenes/2_Conductivity_Bike.unity
+    guid: a46fa296a747df94b85af99350d0d2bb
+  - enabled: 1
     path: Assets/00_Scenes/00_PreStartingScene.unity
     guid: 852ee7aac6fb9bb4b8528707b36a97e1
   - enabled: 1
     path: Assets/00_Scenes/0_TutorialScene.unity
     guid: a47863370a848b149a48a9049a49271d
   - enabled: 1
-    path: Assets/00_Scenes/1_Inhabited_Bridge_Bike.unity
-    guid: b9c02797e62a7e04d9e55c07afe31e3b
-  - enabled: 1
     path: Assets/00_Scenes/4_The_Net_bike.unity
     guid: 7d6e7161fd178db4b945c3f7bf5a7ee5
-  - enabled: 1
-    path: Assets/00_Scenes/2_Conductivity_Bike.unity
-    guid: a46fa296a747df94b85af99350d0d2bb
   - enabled: 1
     path: Assets/00_Scenes/3_All_The_Worlds_a_Stage.unity
     guid: 8a5d97711639c914f9d2094e59bf18f2

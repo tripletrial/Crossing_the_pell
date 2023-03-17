@@ -116,7 +116,7 @@ public class Mover : MonoBehaviour
         }
 
         IEnumerator recenter_countdown(){
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
             
         recenter();
         }
@@ -186,7 +186,7 @@ void FixedUpdate()
 
         var distanceDiff = resetTransform.position- playerHead.transform.position;
         player.transform.position += distanceDiff;
-        blyncControllerData.resetCenterCorrection();
+        // blyncControllerData.resetCenterCorrection();
 
     }
     void checkRotation()

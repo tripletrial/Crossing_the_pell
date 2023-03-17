@@ -52,12 +52,12 @@ public class BikeIrSpeedBehaviour : MonoBehaviour
             _rawSpeed = setRPM;
         }
         // check if _rawSpeed is higher than 600, if so set it to 600
-        if (_rawSpeed > 1500)
+        if (_rawSpeed > 3000)
         {
-            _rawSpeed = 1500;
+            _rawSpeed = 3000;
         }
         // _speed = _rawSpeed * speedScale;
-        _speed = 2f * Mathf.PI * radius * (_rawSpeed / 60f) / 4;
+        _speed = 2f * Mathf.PI * radius * (_rawSpeed / 60f) / 5;
         // Debug.Log(_speed);
 
         // Append the new speed to the list
@@ -83,19 +83,19 @@ public class BikeIrSpeedBehaviour : MonoBehaviour
             // set the new target speed and acceleration
             newSpeed = averageSpeed;
             acceleration = (newSpeed - oldSpeed) / 2;
-            Debug.Log("Old speed: " + oldSpeed);
+            // Debug.Log("Old speed: " + oldSpeed);
             // set the old speed to the current speed
             oldSpeed = BlyncSensorSpeed.value;
 
             // clear the list
             speedArray.Clear();
-            Debug.Log("New target speed: " + newSpeed);
-            Debug.Log("Acceleration: " + acceleration);
+            // Debug.Log("New target speed: " + newSpeed);
+            // Debug.Log("Acceleration: " + acceleration);
         }
         
         // Update the value of the FloatVariable
         BlyncSensorSpeed.value +=acceleration * Time.deltaTime;
-        Debug.Log("Speed: " + BlyncSensorSpeed.value);
+        // Debug.Log("Speed: " + BlyncSensorSpeed.value);
 
         // Update the timer each frame
         _timer += Time.deltaTime;

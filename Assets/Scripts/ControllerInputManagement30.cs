@@ -14,31 +14,46 @@ using UnityEngine.SceneManagement;
 /// managing all the controller input and the keyboard input
 /// the keyboard is the backup controll plan
 /// Functions:
-///     01) show and hide the menu 
+///     01) show and hide the menu
 ///     02) select scene and load
 ///     03) skip the tuturial
 ///         => confirm and load the scene
 /// </summary>
-public class ControllerInputManagement30 : MonoBehaviour {
+public class ControllerInputManagement30 : MonoBehaviour
+{
     #region field
     #region SerializeField
-    [SerializeField] InputActionProperty leftTriggerBtn;
-    [SerializeField] InputActionProperty rightTriggerBtn;
-    [SerializeField] InputActionProperty btnA;
+    [SerializeField]
+    InputActionProperty leftTriggerBtn;
+
+    [SerializeField]
+    InputActionProperty rightTriggerBtn;
+
+    [SerializeField]
+    InputActionProperty btnA;
     List<GameObject> mainMenuBtnLst;
     List<GameObject> sceneImgLst;
-    [SerializeField] languageBool myLanguageBool;
+
+    [SerializeField]
+    languageBool myLanguageBool;
     //[SerializeField] TextMeshProUGUI tuturialMsgInfo;
     //[SerializeField] TextMeshProUGUI loadingMsgBox;
     #endregion
     #region variable
-    Mover myMover;  //GameObject.FindObjectOfType<Mover>();
-    List<string> sceneNameLst = new List<string>{"1_Inhabited_Bridge_Bike", "2_Conductivity_Bike", "3_All_The_Worlds_a_Stage", "4_The_Net_bike" };
+    Mover myMover; //GameObject.FindObjectOfType<Mover>();
+    List<string> sceneNameLst = new List<string>
+    {
+        "1_Inhabited_Bridge_Bike",
+        "2_Conductivity_Bike",
+        "3_All_The_Worlds_a_Stage",
+        "4_The_Net_bike"
+    };
     GameObject flexibleCube; //= GameObject.FindGameObjectWithTag("testCube");
     GameObject mainMenu; //= GameObject.FindGameObjectWithTag("menu_main");
     GameObject subMenu_01; //= GameObject.FindGameObjectWithTag("menu_sub_01");
     GameObject leftController; //= GameObject.FindGameObjectWithTag("controller_l");
     GameObject rightController; //= GameObject.FindGameObjectWithTag("controller_r");
+
     // hold for HOLDTIME2, and confirm the scene
     // const float HOLDTIME_CONFIRM = 3.0f;
     // float bothTriggerPressStartTime;
@@ -53,6 +68,7 @@ public class ControllerInputManagement30 : MonoBehaviour {
     float progressBarScale;
     float leftTriggerValue;
     float rightTriggerValue;
+
     // flags
     bool hasSceneMenuShowed = false;
     bool hasRightTriggerClicken = false;
@@ -64,21 +80,35 @@ public class ControllerInputManagement30 : MonoBehaviour {
     #region property
     // outside envt can only get the scale, and cannot set the value
     public float ProgressBarScale { get; }
-    public bool HasSceneMenuShowed { get => hasSceneMenuShowed; }
-    public bool HasRightTriggerClicken { get => hasRightTriggerClicken; }
-    public bool HasLeftTriggerClicken { get => hasLeftTriggerClicken; }
-    public bool HasSubSceneMenuShowed { get => hasSubSceneMenuShowed; }
-    public bool HasMenuClosed { get => hasMenuClosed; }
+    public bool HasSceneMenuShowed
+    {
+        get => hasSceneMenuShowed;
+    }
+    public bool HasRightTriggerClicken
+    {
+        get => hasRightTriggerClicken;
+    }
+    public bool HasLeftTriggerClicken
+    {
+        get => hasLeftTriggerClicken;
+    }
+    public bool HasSubSceneMenuShowed
+    {
+        get => hasSubSceneMenuShowed;
+    }
+    public bool HasMenuClosed
+    {
+        get => hasMenuClosed;
+    }
     public GameObject[] SpeedoMeters;
-    
-    public GameObject transitionCanvas;
 
+    public GameObject transitionCanvas;
 
     Animator menuAnimators;
 
     #endregion
     #region method
-    
+
     void Start()
     {
         #region checkNull
@@ -92,20 +122,25 @@ public class ControllerInputManagement30 : MonoBehaviour {
             subMenu_01 = GameObject.FindGameObjectWithTag("menu_sub_01");
             leftController = GameObject.FindGameObjectWithTag("controller_l");
             rightController = GameObject.FindGameObjectWithTag("controller_r");
-            menuAnimators = GameObject.FindGameObjectWithTag("canvasMenuAll").GetComponent<Animator>();
+            menuAnimators = GameObject
+                .FindGameObjectWithTag("canvasMenuAll")
+                .GetComponent<Animator>();
 
             //loadingMsgBox.text = "";
-            mainMenuBtnLst = GameObject.FindGameObjectsWithTag("mainBtn").ToList();  // get gameObjects
+            mainMenuBtnLst = GameObject.FindGameObjectsWithTag("mainBtn").ToList(); // get gameObjects
             mainMenuBtnLst = mainMenuBtnLst.OrderBy(element => element.name).ToList(); // sort by name
             sceneImgLst = GameObject.FindGameObjectsWithTag("subSceneBtn").ToList(); // get gameObjects
+            Debug.Log($"---success: sceneImgLst loaded---");
             sceneImgLst = sceneImgLst.OrderBy(element => element.name).ToList(); // sort
+            // Debug log the length of the sceneImgLst 
+            Debug.Log(sceneImgLst.Count+"---success: sceneImgLst loaded---");
         }
         catch (NullReferenceException err)
         {
             Debug.Log("---Fail: sth. NOT loaded---");
             Debug.Log(err.Message);
         }
-        
+
         //Use the constructor: new List<object>(myArray), to convert an array to a list
         if (sceneImgLst != null)
         {
@@ -115,7 +150,7 @@ public class ControllerInputManagement30 : MonoBehaviour {
         {
             Debug.Log($"---Fail: sceneImgLst not loaded---");
         }
-        if(mainMenu != null)
+        if (mainMenu != null)
         {
             Debug.Log($"---success: mainMenu loaded---");
         }
@@ -135,7 +170,7 @@ public class ControllerInputManagement30 : MonoBehaviour {
 
         mainMenu.SetActive(false);
         subMenu_01.SetActive(false);
-        
+
         progressBarScale = 0f;
         currentSelectedIndex = 0;
         //mainBtnListLength = mainMenuBtnLst.Count;
@@ -145,20 +180,34 @@ public class ControllerInputManagement30 : MonoBehaviour {
 
     void Update()
     {
-
         //Animator Transition Screens
-         Animator blackAnimator = transitionCanvas.GetComponent<Animator>();
-        GameObject IB_sprite = transitionCanvas.transform.Find("Loading Screens").transform.Find("Inhabited Bridge").gameObject;
-        GameObject C_sprite = transitionCanvas.transform.Find("Loading Screens").transform.Find("Conductivity").gameObject;
-        GameObject S_sprite = transitionCanvas.transform.Find("Loading Screens").transform.Find("Stage").gameObject;
-        GameObject N_sprite = transitionCanvas.transform.Find("Loading Screens").transform.Find("The Net").gameObject;
+        Animator blackAnimator = transitionCanvas.GetComponent<Animator>();
+        GameObject IB_sprite = transitionCanvas.transform
+            .Find("Loading Screens")
+            .transform.Find("Inhabited Bridge")
+            .gameObject;
+        GameObject C_sprite = transitionCanvas.transform
+            .Find("Loading Screens")
+            .transform.Find("Conductivity")
+            .gameObject;
+        GameObject S_sprite = transitionCanvas.transform
+            .Find("Loading Screens")
+            .transform.Find("Stage")
+            .gameObject;
+        GameObject N_sprite = transitionCanvas.transform
+            .Find("Loading Screens")
+            .transform.Find("The Net")
+            .gameObject;
 
-        
         currentTime = Time.time;
-        leftTriggerValue = leftTriggerBtn.action.ReadValue<float>(); 
+        leftTriggerValue = leftTriggerBtn.action.ReadValue<float>();
         rightTriggerValue = rightTriggerBtn.action.ReadValue<float>();
 
-        flexibleCube.transform.localScale = new Vector3(rightTriggerValue * 0.1f, leftTriggerValue * 0.1f, 1f);
+        flexibleCube.transform.localScale = new Vector3(
+            rightTriggerValue * 0.1f,
+            leftTriggerValue * 0.1f,
+            1f
+        );
         CheckTriggersFrozenTime();
         #region menuInput
         if (SceneManager.GetActiveScene().name != "00_PreStartingScene")
@@ -186,7 +235,10 @@ public class ControllerInputManagement30 : MonoBehaviour {
             else if (mainMenu.activeSelf && !subMenu_01.activeSelf && isTriggerActive)
             {
                 // left trigger, confirm the selected btn CONFIRM
-                if ((leftTriggerValue > 0.75f && rightTriggerValue < 0.05f) || Input.GetKeyUp(KeyCode.O))
+                if (
+                    (leftTriggerValue > 0.75f && rightTriggerValue < 0.05f)
+                    || Input.GetKeyUp(KeyCode.O)
+                )
                 {
                     hasLeftTriggerClicken = true;
                     FreezeTriggers();
@@ -198,9 +250,11 @@ public class ControllerInputManagement30 : MonoBehaviour {
                             mainMenu.SetActive(false);
                             subMenu_01.SetActive(true);
                             currentSelectedIndex = 0;
-                            RenderSelectedImg(currentSelectedIndex, sceneImgLst);
+                            Debug.Log("currentSelectedIndex: " + currentSelectedIndex);
+                            Debug.Log("sceneImgLst.Count: " + sceneImgLst.Count);
+                            RenderSubMenuSelectedImg(currentSelectedIndex, sceneImgLst); // highlight the selected img
                             hasSubSceneMenuShowed = true;
-                            
+
                             break;
                         case 1: // Recenter
                             myMover.recenter();
@@ -227,15 +281,20 @@ public class ControllerInputManagement30 : MonoBehaviour {
                             break;
                     }
                     //FreezeTriggers();
-                    
                 }
                 // true means that the right trigger is pressed SWITCH
-                if ((rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive) || Input.GetKeyDown("n"))
+                if (
+                    (rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive)
+                    || Input.GetKeyDown("n")
+                )
                 {
                     rightController.GetComponent<controllerClickedAnimation>().click = true;
                     // if (tuturialStep == 1) tuturialStep = 2;
                     currentSelectedIndex++;
-                    currentSelectedIndex = CheckListIndex(currentSelectedIndex, mainMenuBtnLst.Count);
+                    currentSelectedIndex = CheckListIndex(
+                        currentSelectedIndex,
+                        mainMenuBtnLst.Count
+                    );
                     RenderSelectedImg(currentSelectedIndex, mainMenuBtnLst);
                     FreezeTriggers();
                     hasRightTriggerClicken = true;
@@ -245,7 +304,10 @@ public class ControllerInputManagement30 : MonoBehaviour {
             else if (!mainMenu.activeSelf && subMenu_01.activeSelf && isTriggerActive)
             {
                 // true means that the right trigger is pressed --- SWITCH
-                if ((rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive) || Input.GetKeyDown("n"))
+                if (
+                    (rightTriggerValue > 0.75f && leftTriggerValue < 0.05f && isTriggerActive)
+                    || Input.GetKeyDown("n")
+                )
                 {
                     rightController.GetComponent<controllerClickedAnimation>().click = true;
                     currentSelectedIndex++;
@@ -255,30 +317,43 @@ public class ControllerInputManagement30 : MonoBehaviour {
                     hasRightTriggerClicken = true;
                     FreezeTriggers();
                 }
-                if ((leftTriggerValue > 0.75f && rightTriggerValue < 0.05f && isTriggerActive) || Input.GetKeyUp(KeyCode.Escape))
+                if (
+                    (leftTriggerValue > 0.75f && rightTriggerValue < 0.05f && isTriggerActive)
+                    || Input.GetKeyUp(KeyCode.Escape)
+                )
                 {
                     hasLeftTriggerClicken = true;
                     leftController.GetComponent<controllerClickedAnimation>().click = true;
                     // MainMenu btn click
                     string currentSceneName = SceneManager.GetActiveScene().name;
-                    if (currentSelectedIndex != sceneImgLst.Count - 1 && currentSceneName != "0_StartingScene 1")
+                    if (
+                        currentSelectedIndex != sceneImgLst.Count - 1
+                        && currentSceneName != "0_StartingScene 1"
+                    )
                     {
-                        if(currentSelectedIndex==  0){
+                        if (currentSelectedIndex == 0)
+                        {
                             IB_sprite.SetActive(true);
                             C_sprite.SetActive(false);
                             S_sprite.SetActive(false);
                             N_sprite.SetActive(false);
-                        } else if(currentSelectedIndex==  1){
+                        }
+                        else if (currentSelectedIndex == 1)
+                        {
                             IB_sprite.SetActive(false);
                             C_sprite.SetActive(true);
                             S_sprite.SetActive(false);
                             N_sprite.SetActive(false);
-                        } else if(currentSelectedIndex==  2){
+                        }
+                        else if (currentSelectedIndex == 2)
+                        {
                             IB_sprite.SetActive(false);
                             C_sprite.SetActive(false);
                             S_sprite.SetActive(true);
                             N_sprite.SetActive(false);
-                        } else if(currentSelectedIndex==  3){
+                        }
+                        else if (currentSelectedIndex == 3)
+                        {
                             IB_sprite.SetActive(false);
                             C_sprite.SetActive(false);
                             S_sprite.SetActive(false);
@@ -286,11 +361,14 @@ public class ControllerInputManagement30 : MonoBehaviour {
                         }
                         blackAnimator.SetTrigger("WhiteTransition");
                         StartCoroutine(loadScene(sceneNameLst[currentSelectedIndex]));
-                            mainMenu.SetActive(false);
-                            subMenu_01.SetActive(false);
-                            hasMenuClosed = true;
+                        mainMenu.SetActive(false);
+                        subMenu_01.SetActive(false);
+                        hasMenuClosed = true;
                     }
-                    else if (currentSelectedIndex < sceneImgLst.Count - 1 && currentSceneName != "0_StartingScene 1")
+                    else if (
+                        currentSelectedIndex < sceneImgLst.Count - 1
+                        && currentSceneName != "0_StartingScene 1"
+                    )
                     {
                         //
                     }
@@ -306,14 +384,15 @@ public class ControllerInputManagement30 : MonoBehaviour {
                 }
             }
         }
-        else 
+        else
         {
             if ((leftTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("n"))
             {
                 // TO DO: english
-                
+
                 myLanguageBool.isEn = true;
-            } else if((rightTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("m"))
+            }
+            else if ((rightTriggerValue > 0.75f && isTriggerActive) || Input.GetKeyUp("m"))
             {
                 // TO DO: spanish
                 myLanguageBool.isEn = false;
@@ -321,6 +400,7 @@ public class ControllerInputManagement30 : MonoBehaviour {
         }
         #endregion
     }
+
     /// <summary>
     /// Helper Method
     /// </summary>
@@ -350,25 +430,27 @@ public class ControllerInputManagement30 : MonoBehaviour {
 
         return 0; // in case of death loop
     }
+
     void RenderSelectedImg(int index, List<GameObject> imgList)
     {
-        if(sceneImgLst.Count != 0)
+        if (sceneImgLst.Count != 0)
         {
             // first, reset all img to (1f,1f,1f)
             foreach (GameObject obj in imgList)
             {
                 obj.GetComponent<UnityEngine.UI.Image>().enabled = true;
-            obj.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+                Debug.Log(obj.name);
+                obj.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
             }
             // then
-            
+
             GameObject selectedSceneImg = imgList[index];
             selectedSceneImg.GetComponent<UnityEngine.UI.Image>().enabled = false;
             selectedSceneImg.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
             //selectedSceneImg.transform.localScale = new Vector3(SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO);
         }
-
     }
+
     void RenderSubMenuSelectedImg(int index, List<GameObject> imgList)
     {
         if (sceneImgLst.Count != 0)
@@ -384,31 +466,33 @@ public class ControllerInputManagement30 : MonoBehaviour {
             selectedSceneImg.GetComponent<UnityEngine.UI.Image>().enabled = true;
             //selectedSceneImg.transform.localScale = new Vector3(SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO, SELECTEDIMGSCALERATIO);
         }
-
     }
+
     void FreezeTriggers()
     {
         triggersFreezeStartTime = currentTime;
         // freeze both the triggers
         isTriggerActive = false;
         Debug.Log("Freeziong");
-
     }
+
     void CheckTriggersFrozenTime()
     {
-
-        if(triggersFreezeStartTime != 0 && ((currentTime - triggersFreezeStartTime) > TRIGGER_FREEZETIME))
+        if (
+            triggersFreezeStartTime != 0
+            && ((currentTime - triggersFreezeStartTime) > TRIGGER_FREEZETIME)
+        )
         {
             isTriggerActive = true;
             Debug.Log("Unfreezing");
         }
-
     }
     #endregion
 
-    IEnumerator loadScene(string bike_scene){
+    IEnumerator loadScene(string bike_scene)
+    {
         //play black screen transition animation
-        
+
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(bike_scene);
     }

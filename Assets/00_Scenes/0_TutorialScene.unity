@@ -15758,6 +15758,44 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3195840843980218531, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
+--- !u!1 &187585477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524857118014455747, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
+  m_PrefabInstance: {fileID: 7089151811585758190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &187585480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187585477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &188643683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4925048589988976587, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
@@ -64654,62 +64692,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: ManagerState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: shouldReconnect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].pinMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].prevPin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].sendValue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].currentPin
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].arduinoName
-      value: uduinoBoard
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].isEditorPin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].prevPinMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].lastReadValue
-      value: 440
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: pins.Array.data[0].prevSendValue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: presentExtentionsMap.keys.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
-      propertyPath: presentExtentionsMap.values.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
@@ -65552,7 +65534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1180831636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65629,7 +65611,7 @@ MonoBehaviour:
   pointerTransformOverride: {fileID: 0}
   TouchControllerTransform: {fileID: 0}
   InteractionButton: 8192
-  oculusCameraRig: {fileID: 0}
+  oculusCameraRig: {fileID: 1285166929}
   rightXRController: {fileID: 0}
   leftXRController: {fileID: 0}
 --- !u!1 &1187571982
@@ -66622,6 +66604,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1595305251868653921, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
+--- !u!1 &1285166922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7524857118014455751, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
+  m_PrefabInstance: {fileID: 7089151811585758190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1285166929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7524857118008953385, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
+  m_PrefabInstance: {fileID: 7089151811585758190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285166922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295210770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130616202216076352, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
@@ -66882,7 +66880,7 @@ MonoBehaviour:
   radius: 0.23
   numOfStrips: 8
   setRPM: 100
-  isTesting: 1
+  isTesting: 0
 --- !u!114 &1338988205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73017,7 +73015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e84b65f6b68cbca4a9a9c63e390ea836, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e84b65f6b68cbca4a9a9c63e390ea836, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -76000,6 +75998,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8606536308339986322, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
+--- !u!1 &1693985358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1169019389771402, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
+  m_PrefabInstance: {fileID: 1027188771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1693985361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693985358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d94f232fdc1d3147abee95fa2daa08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696097793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4753560288738680881, guid: 84cc493928e19004b94ccaad802fb6e5, type: 3}
@@ -99847,6 +99862,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6419047261039035610, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6825695696523583749, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -99939,6 +99958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7089151811269447848, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1285166922}
     - target: {fileID: 7089151811269447848, guid: 5b357e22c7b4b7249b04850303c61ded, type: 3}
       propertyPath: deadLevelObj
       value: 

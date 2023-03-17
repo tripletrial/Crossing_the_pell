@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b3639f5d5ef5d4fb3978e05e6ffaa9, type: 3}
   m_Name: BikeData
   m_EditorClassIdentifier: 
-  kidsBike: 1
-  Blue: 1
+  kidsBike: 0
+  Blue: 0
