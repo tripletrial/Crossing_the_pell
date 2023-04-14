@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7849123958429738252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4667847928871590627}
+  - component: {fileID: 758036682290784274}
+  - component: {fileID: 797138263067173476}
+  m_Layer: 0
+  m_Name: IR_Sensor_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: 8c53aeac11c2023478cfc6f967a46c53, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4667847928871590627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849123958429738252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758036682290784274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849123958429738252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5a4e52dfc3107499249fb2d34a1bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pins:
+  - arduinoName: uduinoBoard
+    pinMode: 1
+    prevPinMode: 1
+    currentPin: 3
+    prevPin: 3
+    isEditorPin: 1
+    sendValue: 0
+    prevSendValue: 0
+    lastReadValue: 440
+  activeExtentionsMap:
+    keys:
+    - UduinoDevice_DesktopSerial
+    values: 01
+  presentExtentionsMap:
+    keys:
+    - UduinoDevice_DesktopSerial
+    values: 01
+  ManagerState: 0
+  debugLevel: 3
+  baudRate: 9600
+  limitSendRate: 0
+  readTimeout: 30
+  writeTimeout: 30
+  threadIdleDelay: 16
+  alwaysRead: 1
+  readAfterCommand: 1
+  skipMessageQueue: 1
+  messageQueueLength: 10
+  defaultArduinoBoardType: 0
+  useCuPort: 0
+  forcePinEditor: 0
+  sendRateDelay: 20
+  discoverTries: 100
+  autoDiscover: 1
+  delayBeforeDiscover: 0.5
+  readLineCharByChar: 0
+  stopAllOnQuit: 1
+  stopAllOnPause: 1
+  autoReconnect: 1
+  autoReconnectDelay: 1
+  shouldReconnect: 1
+  blackListedPorts: []
+  OnDataReceivedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBoardConnectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBoardDisconnectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  displayAndroidTextGUI: 0
+  autoConnectToLastDevice: 1
+  bleScanDuration: 3
+  interfaceType: 2
+  uduinoWiFiBoards: []
+  isApplicationQuiting: 0
+--- !u!114 &797138263067173476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849123958429738252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e3b622ad534ab4baca0690dbd3c02d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 0.01
+  BlyncSensorSpeed: {fileID: 0}
