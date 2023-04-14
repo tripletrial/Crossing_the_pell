@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2476919321252692163}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a783f671592674b589cfc4953e28656b, type: 3}
   m_Name: 
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 66.02693, y: -153.99995, z: -39.800224}
+  savedPos: {x: 66.02669, y: -153.86554, z: -39.96432}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 900, y: 316}
   savedColor: {r: 0.86041886, g: 0.9150943, b: 0.8642542, a: 1}
@@ -2561,7 +2561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2687976058969814815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a783f671592674b589cfc4953e28656b, type: 3}
   m_Name: 
@@ -3506,7 +3506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 152.8113, y: -169.00002, z: -0.00038897857}
+  savedPos: {x: 152.8186, y: -168.89566, z: -0.26774573}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 150, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4220,7 +4220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 348.79138, y: -169.00002, z: -0.00038897857}
+  savedPos: {x: 348.82278, y: -168.89575, z: -0.26753327}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 150, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -42.57273, y: -169.00002, z: -0.00038897857}
+  savedPos: {x: -42.575226, y: -168.89557, z: -0.26795754}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 150, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -237.95676, y: -169.00002, z: -0.00038897857}
+  savedPos: {x: -238.00975, y: -168.89548, z: -0.26816937}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 150, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 0.9529412}

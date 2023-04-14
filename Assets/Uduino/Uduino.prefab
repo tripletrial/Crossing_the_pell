@@ -27,9 +27,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114023058375386772
 MonoBehaviour:
@@ -43,7 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5a4e52dfc3107499249fb2d34a1bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pins: []
+  pins:
+  - arduinoName: uduinoBoard
+    pinMode: 1
+    prevPinMode: 1
+    currentPin: 3
+    prevPin: 3
+    isEditorPin: 1
+    sendValue: 0
+    prevSendValue: 0
+    lastReadValue: 440
   activeExtentionsMap:
     keys:
     - UduinoDevice_DesktopSerial
@@ -51,18 +61,14 @@ MonoBehaviour:
   presentExtentionsMap:
     keys:
     - UduinoDevice_DesktopSerial
-    - UduinoDevice_DesktopBluetoothLE
-    - UduinoDevice_AndroidBluetoothLE
-    - UduinoDevice_AndroidSerial
-    - UduinoDevice_Wifi
-    values: 0101010101
+    values: 01
   ManagerState: 0
   debugLevel: 0
   baudRate: 9600
   limitSendRate: 0
   readTimeout: 30
   writeTimeout: 30
-  threadFrequency: 16
+  threadIdleDelay: 16
   alwaysRead: 1
   readAfterCommand: 1
   skipMessageQueue: 0
@@ -70,15 +76,16 @@ MonoBehaviour:
   defaultArduinoBoardType: 0
   useCuPort: 0
   forcePinEditor: 0
-  sendRateSpeed: 20
+  sendRateDelay: 20
   discoverTries: 10
   autoDiscover: 1
   delayBeforeDiscover: 0.5
+  readLineCharByChar: 0
   stopAllOnQuit: 1
   stopAllOnPause: 0
   autoReconnect: 1
   autoReconnectDelay: 5
-  shouldReconnect: 0
+  shouldReconnect: 1
   blackListedPorts: []
   OnDataReceivedEvent:
     m_PersistentCalls:
